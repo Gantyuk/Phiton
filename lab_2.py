@@ -1,4 +1,3 @@
-import math
 from random import randrange as rnd, choice
 
 def scalar_product(vector1,vector2,count1):
@@ -9,6 +8,7 @@ def scalar_product(vector1,vector2,count1):
 
 count = int(input('n = '))
 matrix = []
+
 for r in range(count):
     matrix.append([])
     for c in range(count):
@@ -22,6 +22,7 @@ for r in range(count):
     matrixY.append([])
     for c in range(count):
         matrixY[r].append(scalar_product(matrix[r],matrix[c],count))
+        
 print("Y:")     
 for r in range(count):
     print(matrixY[r])

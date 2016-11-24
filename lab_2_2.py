@@ -17,7 +17,7 @@ def sum_expres(n):
         return 0
     k = 1
     suma = 0
-    while k < n:
+    while k <= n:
         suma = suma + ((2**k) / (1 + a(k) + b(k)))
         k = k + 1
     return suma    
